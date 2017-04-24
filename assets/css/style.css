@@ -1,0 +1,200 @@
+.font{
+
+	font-size: 12px;
+}
+
+
+.input{
+
+	border:1px solid #b19cd9;
+	font-size:12px;
+	height: 30px;
+	margin-top:10px;
+	margin-right: 25px;
+
+
+
+}
+
+.floatCenter{
+
+	margin-left:auto;
+	margin-right: auto;
+	margin-bottom:7px;
+		border: 1px dashed #000000;
+
+
+
+}
+.coupon{
+	
+	text-align: center;
+}
+
+.couponTxt{
+	font-size: 36px;
+	color:#ff0000;
+	font-weight: bold;
+
+
+}
+
+.finePrint{
+
+
+	font-size: 10px;
+
+}
+
+
+.electronic{
+
+	font-size: 16px;
+	color:#000080;
+	font-weight: bold;
+	text-align: center;
+}
+ .floatRight{
+
+	float:right;
+	margin-bottom:5px;
+
+}
+.bottomBorder{
+
+	border-bottom:1px solid #000;
+}
+.colored{
+
+padding-top:10px;
+	background-color: #000000
+}
+
+
+.header{
+
+font-weight: 600;
+text-transform: uppercase;
+color: #ffffff;
+
+}
+.modal .mheader{
+	text-align: left;
+	color:#000080;
+
+}
+
+ .modal .madjust{
+
+
+	max-width:60%;
+	overflow: auto;
+}
+
+.ecsu{
+
+	color:#800000;
+	font-size:20px;
+	text-align: center;
+}
+
+
+.order{
+
+	color: #000080;
+	text-transform: uppercase;;
+	font-weight: bold;
+	font-family: cursive;
+	font-size: 36px;
+	text-align: center;
+	text-decoration: underline;
+	margin-top:100px;
+
+}
+.row .labelControl{
+
+
+	padding-left: 5px;
+	text-align: right;
+	margin-top:10px;
+}
+
+
+.secondHeader{
+
+	font-weight:600;
+	text-transform: uppercase;
+	font-size:15px;
+	margin:5px;
+
+}
+
+
+.floatRight .btn-save{
+
+	width: 75px;
+	font-size: 12px;
+	background-color:#b19cd9;
+	color:#ffffff;
+	line-height: .75em;
+}
+
+.realign{
+
+
+
+	margin:10px;
+}
+
+
+
+body{
+	font-family: 'Trebuchet MS', serif;
+	line-height: 1.6
+}
+
+.tabStyle{
+
+	border-bottom: 1px solid #b19cd9;
+}
+.container{
+	width: 800px;
+	margin: 0 auto;
+}
+
+
+ul.tabs{
+	margin: 0px;
+	padding: 0px;
+	list-style: none;
+}
+
+ul.tabs li{
+	background: none;
+	color: #000;
+	display: inline-block;
+	padding: 10px 15px;
+	cursor: pointer;
+}
+
+ul.tabs li.current{
+	
+	color: #000;
+	border:1px solid #b19cd9;
+}
+
+.tab-content{
+	display: none;
+	background: #fff;
+	padding: 15px;
+}
+
+.tab-content.current{
+	display: inherit;
+}
+
+.tab-link{
+
+
+
+}
