@@ -29,12 +29,12 @@
 
 				<div class="row colored">
 					<div class="col-md-5">
-						<p class="header">Employer Name</p>
+						<p class="employeeheader">Employer Name</p>
 					</div>
 
-					<div class="col-md-2 header pull-right">Label</div>
-					<div class="col-md-2 header pull-right">Label</div>
-					<div class="col-md-2 header pull-right">Label</div>
+					<div class="col-md-2 header pull-right">New Employee Handbook</div>
+					<div class="col-md-2 header pull-right">Frequently Asked Questions</div>
+					<div class="col-md-2 header pull-right">Account Information</div>
 				</div>
   <ul class="tabs tabStyle">
     <li class="tab-link current" data-tab="tab-1">Basic Information</li>
@@ -73,7 +73,7 @@
 								<div class="row">
 									<label class="col-md-6 labelControl"> Address:</label>
 									<div class="col-md-6">
-										<input class="input form-control" type="text">
+										<input class="input form-control" id="street" type="text">
 									</div>
 								</div>
 							</div>
@@ -82,7 +82,7 @@
 								<div class="row">
 									<label class="col-md-6 labelControl"> Zip:</label>
 									<div class="col-md-6">
-										<input class="input form-control" type="text">
+										<input class="input form-control" id="zip" type="text">
 									</div>
 								</div>
 							</div>
@@ -105,7 +105,7 @@
 									<label class="col-md-6 labelControl"> City:</label>
 						
 									<div class="col-md-6">
-										<input class="input form-control" type="text">
+										<input class="input form-control" id="town" type="text">
 									</div>
 								</div>
 							</div>
@@ -138,7 +138,7 @@
 									<label class="col-md-6 labelControl">State:</label>
 							
 									<div class="col-md-6">
-										<input class="input form-control" type="text">
+										<input class="input form-control" id="state" type="text">
 									</div>
 								</div>
 							</div>
@@ -148,7 +148,7 @@
 									<label class="col-md-6 labelControl"> Phone:</label>
 							
 									<div class="col-md-6">
-										<input class="input form-control" type="text">
+										<input class="input form-control" id= "phoneNumber" type="text">
 									</div>
 								</div>
 							</div>
@@ -406,7 +406,7 @@
     							<div class="modal-content">
 							      	<div class="modal-header">
 							        	<button type="button" class="close" data-dismiss="modal">&times;</button>
-							        		<h4 class="modal-title">Hey <label id="employeename" name="employeename" ></label>! We see that you are <label id="employeeage" name="employeeage" ></label> years old. This means you qualify for an opportunity for millenials just like you!</h4>
+							        		<h4 class="modal-title center">Hey <label id="employeename" name="employeename" ></label>! We see that you are <label id="employeeage" name="employeeage" ></label> years old. This means you qualify for an opportunity for millenials just like you!</h4>
 							      	</div>
 							      
 								    <div class="modal-body">
@@ -485,33 +485,46 @@
 
 					<!-- Modal3 -->
 					<div id="modal3" class="modal fade" role="dialog">
-					  	<div class="modal-dialog">
+					  	<div class="modal-dialog sizeFix">
 
 						    <!-- Modal content-->
 						   	<div class="modal-content">
 							      	<div class="modal-header">
 							        	<button type="button" class="close" data-dismiss="modal">&times;</button>
-							        		<h4 class="modal-title">Hey <label id="employeename" name="employeename" ></label>! We see that you are <label id="employeeage" name="employeeage" ></label> years old. This means you qualify for an opportunity for millenials just like you!</h4>
+							        		<h4 >Food for Thought</h4>
 							      	</div>
 							      
 								    <div class="modal-body">
-								      	<div class="row">
-								        	<p class="electronic">
-								        		Our electronics store is offering a once in a lifetime opportunity for all millenials. We are offering a 50% off coupon for anything in the store. All products are elligible. Act now, for this offer won't last forever!
+								    
+								    <div class="row">
+								    
+										<p class="textStyle center">
+								        	Life is short, why waste it grocery shopping? Our service will deliver right to your house at <label id="fullAddress" name="fullAddress" ></label>. This will save you time and money!  
 								        	</p>
+								    </div>
+
+
+
+
+										<div class="row">							      
+											<img src="groceries.png" class="imgFix" style="width:80%;height:80%;">
+										</div>
+										
+										<div class="row">
+											<p class=" textStyle imgFix">
+								        	Don't worry, we will contact you at <label id="employeeNum" name="employeeNum"></label> with more information! Happy shopping!
+								        	</p>
+								      	
+								      	</div>
 								      	</div>
 
-								      	
-
-							      		
-							      
 							      		<div class="modal-footer">
 							        		<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
 							      		</div>
 								    </div>
 								</div>
 					  	</div>
-					</div>
+					<!--</div>-->
 
 					<!--end modal3-->
 			</fieldset>
@@ -578,6 +591,33 @@ $("#fName").change(function () {
 });
 
   </script>
+
+
+
+   <script>
+  	
+$("#street, #town, #state, #zip").change(function () {
+    var addressArray = [$("#street").val(), $("#town").val(), $("#state").val(),$("#zip").val()];
+    $("#fullAddress").text(addressArray.join(' '));
+
+
+
+
+
+
+});
+
+  </script>
+
+
+<script>
+  	
+$("#phoneNumber").change(function () {
+    var numberArray = [$("#phoneNumber").val()];
+    $("#employeeNum").text(numberArray.join(' '));
+});
+
+</script>
 
 
    <script>
